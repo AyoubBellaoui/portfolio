@@ -3,7 +3,15 @@ import type { Project } from "@/app/_lib/data";
 import { BrowserFrame } from "./browser-frame";
 import { ArrowUpRightIcon, GithubIcon } from "./icons";
 
-export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
+export function ProjectCard({
+  project,
+  priority = false,
+  sizes = "(min-width: 1024px) 50vw, 100vw",
+}: {
+  project: Project;
+  priority?: boolean;
+  sizes?: string;
+}) {
   const label = project.demoUrl
     ? new URL(project.demoUrl).hostname
     : new URL(project.codeUrl).pathname.slice(1);
@@ -16,7 +24,8 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
           alt={project.title}
           fill
           priority={priority}
-          sizes="(min-width: 1024px) 50vw, 100vw"
+          quality={90}
+          sizes={sizes}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

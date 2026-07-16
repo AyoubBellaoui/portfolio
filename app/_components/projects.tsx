@@ -19,7 +19,7 @@ export function Projects() {
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
           <Reveal variant="scale" className="sm:col-span-2 lg:col-span-6">
             <TiltCard maxTilt={2}>
-              <ProjectCard project={clinicPro} priority />
+              <ProjectCard project={clinicPro} priority sizes="(min-width: 1024px) 1152px, 100vw" />
             </TiltCard>
           </Reveal>
 
@@ -37,19 +37,19 @@ export function Projects() {
 
           <Reveal variant="up" delay={60} className="lg:col-span-2">
             <TiltCard>
-              <ProjectCard project={studentApp} />
+              <ProjectCard project={studentApp} sizes="(min-width: 1024px) 33vw, 100vw" />
             </TiltCard>
           </Reveal>
 
           <Reveal variant="up" delay={120} className="lg:col-span-2">
             <TiltCard>
-              <ProjectCard project={deluxeApp} />
+              <ProjectCard project={deluxeApp} sizes="(min-width: 1024px) 33vw, 100vw" />
             </TiltCard>
           </Reveal>
 
           <Reveal variant="up" delay={180} className="lg:col-span-2">
             <TiltCard>
-              <ProjectCard project={contractManager} />
+              <ProjectCard project={contractManager} sizes="(min-width: 1024px) 33vw, 100vw" />
             </TiltCard>
           </Reveal>
         </div>
