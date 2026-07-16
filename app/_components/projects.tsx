@@ -19,13 +19,13 @@ export function Projects() {
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
           <Reveal variant="scale" className="sm:col-span-2 lg:col-span-6">
             <TiltCard maxTilt={2}>
-              <ProjectCard project={ecommerce} priority />
+              <ProjectCard project={clinicPro} priority />
             </TiltCard>
           </Reveal>
 
           <Reveal variant="up" delay={60} className="lg:col-span-3">
             <TiltCard>
-              <ProjectCard project={clinicPro} />
+              <ProjectCard project={ecommerce} />
             </TiltCard>
           </Reveal>
 

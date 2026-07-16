@@ -185,7 +185,6 @@ export const projects: Project[] = [
     codeUrl: "https://github.com/AyoubBellaoui/Ziyachic",
     demoUrl: "https://cerulean-seahorse-b20076.netlify.app/",
     image: "/images/projects/ecommerce.png",
-    featured: true,
   },
   {
     slug: "clinic-pro",
@@ -195,6 +194,7 @@ export const projects: Project[] = [
     tech: ["Laravel", "MySQL", "Tailwind CSS"],
     codeUrl: "https://github.com/AyoubBellaoui/clinique-medicale-app",
     image: "/images/projects/clinic-pro.png",
+    featured: true,
   },
   {
     slug: "facebook-clone-app",
